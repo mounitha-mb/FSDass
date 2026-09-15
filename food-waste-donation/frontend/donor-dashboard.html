@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donor Dashboard | FoodShare</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">FoodShare</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="available-food.html">Available Food</a>
+        <a href="my-donations.html">My Donations</a>
+        <a href="add-food.html">Add Food</a>
+        <a href="login.html" id="logoutLink">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="dashboard-page">
+    <section class="dashboard-header">
+      <div>
+        <span class="section-tag">Donor Dashboard</span>
+        <h1 id="donorWelcome">Welcome, Donor!</h1>
+      </div>
+      <div class="dashboard-actions">
+        <a href="add-food.html" class="btn btn-primary">Add Food</a>
+      </div>
+    </section>
+
+    <section class="dashboard-content">
+      <div class="dashboard-card">
+        <div class="card-title">
+          <h3>My Food Donations</h3>
+        </div>
+        <div id="donorDonationList" class="food-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 FoodShare. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/donor.js"></script>
+</body>
+</html>

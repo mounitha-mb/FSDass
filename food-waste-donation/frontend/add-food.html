@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Food | FoodShare</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">FoodShare</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="available-food.html">Available Food</a>
+        <a href="my-donations.html">My Donations</a>
+        <a href="add-food.html" class="active">Add Food</a>
+        <a href="login.html" id="logoutLink">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <section class="form-page">
+      <div class="section-heading center">
+        <span class="section-tag">Donor Form</span>
+        <h1>Add Food Donation</h1>
+      </div>
+      <div class="form-card">
+        <form id="addFoodForm" class="food-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="foodName">Food Name</label>
+              <input type="text" id="foodName" name="foodName" required />
+            </div>
+            <div class="form-group">
+              <label for="category">Food Category</label>
+              <input type="text" id="category" name="category" required />
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" required />
+            </div>
+            <div class="form-group">
+              <label for="servings">Number of Servings</label>
+              <input type="number" id="servings" name="servings" required />
+            </div>
+            <div class="form-group">
+              <label for="foodType">Veg / Non-Veg</label>
+              <select id="foodType" name="foodType" required>
+                <option value="Veg">Veg</option>
+                <option value="Non-Veg">Non-Veg</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="preparationDate">Preparation Date</label>
+              <input type="date" id="preparationDate" name="preparationDate" required />
+            </div>
+            <div class="form-group">
+              <label for="expiryDate">Expiry Date</label>
+              <input type="date" id="expiryDate" name="expiryDate" required />
+            </div>
+            <div class="form-group">
+              <label for="pickupLocation">Pickup Location</label>
+              <input type="text" id="pickupLocation" name="pickupLocation" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Food</button>
+          <div id="foodMessage" class="message"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 FoodShare. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/donor.js"></script>
+</body>
+</html>
