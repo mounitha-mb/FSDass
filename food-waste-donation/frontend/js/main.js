@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://fsdass.onrender.com/api';
 
 function showMessage(elementId, message, isError = false) {
   const el = document.getElementById(elementId);

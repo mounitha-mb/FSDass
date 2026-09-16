@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://fsdass.onrender.com/api';
 
 document.addEventListener('DOMContentLoaded', () => {
   const registerForm = document.getElementById('registerForm');
